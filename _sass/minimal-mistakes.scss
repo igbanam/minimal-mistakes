@@ -6,7 +6,6 @@
 
 /* Mixins and functions */
 @use "minimal-mistakes/vendor/breakpoint/breakpoint";
-@include breakpoint-set("to ems", true);
 @use "minimal-mistakes/vendor/magnific-popup/magnific-popup"; // Magnific Popup
 @use "minimal-mistakes/vendor/susy/susy";
 @use "minimal-mistakes/mixins";
@@ -35,3 +34,5 @@
 @use "minimal-mistakes/archive";
 @use "minimal-mistakes/sidebar";
 @use "minimal-mistakes/print";
+
+@include breakpoint-set("to ems", true);
