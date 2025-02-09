@@ -13,6 +13,24 @@
 //////////////////////////////
 // Get Settings
 //////////////////////////////
+$Breakpoint-Settings: (
+  'default media': all,
+  'default feature': min-width,
+  'default pair': width,
+
+  'force all media type': false,
+  'to ems': false,
+  'transform resolutions': true,
+
+  'no queries': false,
+  'no query fallbacks': false,
+
+  'base font size': 16px,
+
+  'legacy syntax': false
+);
+
+$breakpoint: () !default;
 @function breakpoint-get($setting) {
   @if breakpoint-has($setting) {
     @return map-get($breakpoint, $setting);

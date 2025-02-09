@@ -1,4 +1,17 @@
 //////////////////////////////
+// Imports
+//////////////////////////////
+@import "settings";
+@import "context";
+@import "helpers";
+@import "parsers";
+@import "no-query";
+
+@import "respond-to";
+
+@import "legacy-settings";
+
+//////////////////////////////
 // Default Variables
 //////////////////////////////
 $Breakpoint-Settings: (
@@ -19,19 +32,6 @@ $Breakpoint-Settings: (
 );
 
 $breakpoint: () !default;
-
-//////////////////////////////
-// Imports
-//////////////////////////////
-@import "settings";
-@import "context";
-@import "helpers";
-@import "parsers";
-@import "no-query";
-
-@import "respond-to";
-
-@import "legacy-settings";
 
 //////////////////////////////
 // Breakpoint Mixin
